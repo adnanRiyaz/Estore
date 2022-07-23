@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOILERPLATE</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Gruppo&display=swap"
+    />
+  </head>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md py-0 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FakeStore</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ">
+          <li class="nav-item"id="n1">
+            <button id="btn1"type="button"href="/products" class="btn btn-outline-light  btn-sm mt-1 pt-0 pl-1">Home</button>
+          </li>
+          <li class="nav-item"id="navbtn">
+            <a id="btn" href="/products" class="btn btn-outline-light  btn-sm mt-1 pt-0 pl-1">Products</a>
+          </li>
+          <li class="nav-item"id="navbtn">
+            <button id="btn"type="button"href="#" class="btn btn-outline-light  btn-sm mt-1 pt-0 pl-1">Testimonials</button>
+          </li>
+          <li class="nav-item"id="navbtn">
+            <button id="btn"type="button"href="#" class="btn btn-outline-light  btn-sm mt-1 pt-0 pl-1 ">Contact Us</button>
+          </li>
+        </ul>
+      </div> 
+  </nav>
+  
+    <div class="container-fluid p-0">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div id="carousel" class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img
+              id="cimg"
+              src="/images/1.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              id="cimg"
+              src="/images/2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              id="cimg"
+              src="/images/3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              id="cimg"
+              src="/images/4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              id="cimg"
+              src="/images/5.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="heading">
+      <h2 id="prodsh"><span style="color: red;">O</span><span style="color: green;">M</span><span style="color: blue;">G</span><span style="color: black;">!</span> DEALS </span></h2>
+      <p id="prodsh" style="margin-bottom:20px;">JAW-DROPPING PRICES THIS WAY</p>
+    </div>
+<div class="box">   
+<%for(let product of products){%>
+
+<div id="item" >
+      <div id="card"class="card">
+        <img id="pi" src="<%=product.image%>" class="card-img" alt="">
+        <div class="card-body">
+              <a class="card-title"
+              style="font-weight:900;font-family: 'Gruppo';font-size:large;border-bottom: 1px solid gray;text-decoration:none ;" href="/products/<%=product.id%>"><%= product.title %></a>
+
+        </div>
+      </div>
+</div>
+
+<%}%>
+</div>
+
+<footer class="footer bg-dark py-3 mt-auto">
+  <div class="container ">
+    <p id="pf">Contact : 0987654321</p>
+    <p id="pf">Follow Us On : <img id="ficon"src="/images/facebook.png" alt=""><img id="ficon"src="/images/twitter.png" alt=""><img id="ficon"src="/images/instagram.png" alt=""></p>
+    <div id="last"class="text-center">
+       <span id="last">&copy;FakeStore 2022</span>
+    </div>
+  </div>
+</footer>
+
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
+
+

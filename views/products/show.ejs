@@ -1,0 +1,67 @@
+<%layout('/layouts/boiler')%>
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="card mb-3 mt-3">
+      <img style="height: 400px;"
+        class="card-img-top"
+        src="<%=Productss.image%>"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5
+          style="
+            font-family: 'Gruppo';
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+          "
+          class="card-title"
+        >
+          <%=Productss.title%>
+        </h5>
+        <p class="card-text">
+          <span
+            style="
+              font-weight: bolder;
+              font-family: 'Audiowide';
+              letter-spacing: 1px;
+            "
+            >Description :</span
+          >
+          <%=Productss.description%>
+        </p>
+        <p>
+          <span
+            style="
+              font-weight: bolder;
+              font-family: 'Audiowide';
+              letter-spacing: 1px;
+            "
+            >Category :</span
+          ><%=Productss.category%>
+
+          <p
+            style="
+              font-weight: bolder;
+              font-family: 'Audiowide';
+              letter-spacing: 1px;
+              float: left;
+            "
+            >Price :</p
+          >$<%=Productss.price%>
+        </p>
+      </div>
+
+      <div class="card-footer">
+        <span
+          style="
+            font-weight: bolder;
+            font-family: 'Audiowide';
+            letter-spacing: 1px;
+          "
+          >Rating :</span
+        ><span><%=Productss.rating.rate%></span>
+      </div>
+    </div>
+  </div>
+</div>

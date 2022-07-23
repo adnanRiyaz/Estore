@@ -1,0 +1,88 @@
+#cimg{
+    width: 826px;
+    height:600px;
+}
+.navbar-brand{
+    color:#fefbfb;
+    font-size:1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-left: 3px;
+    font-family:"Audiowide";
+}
+#btn1{
+    font-family: "Gruppo";
+    font-weight:bolder;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+
+#btn{
+    margin-left: 15px;
+    font-family: "Gruppo";
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+#prodsh{
+    margin-top: 10px;
+    font-family: "Audiowide";
+    letter-spacing: 1px;
+    font-weight:lighter;
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+
+#pi{
+    height: 230px;
+    width: 336px;
+    margin: 5px 5px;
+
+}
+
+.box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#card{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 420px;
+    align-items: center;
+}
+#pricebtn{
+    float:right;
+    vertical-align:baseline;
+}
+#item{
+    height:430px;
+    width: 420px;
+}
+body{
+    background-color: rgb(203, 201, 201);
+}
+
+#pf{
+    color:azure;
+    font-family: 'Gruppo';
+    font-weight:lighter;
+    letter-spacing: 2px;
+    font-size:large;
+}
+#ficon{
+    width:20px;
+    height:20px;
+    filter: invert();
+    margin-left: 3px;
+}
+#last{
+    color: azure;
+    justify-content: center;
+    font-size:larger;
+}
